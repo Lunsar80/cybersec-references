@@ -1,0 +1,135 @@
+# =============================================================================
+# Canonical baseline .gitignore  (standardized across repos)
+# =============================================================================
+
+# ─────────────────────────────────────────────
+# Secrets, keys & credentials — NEVER commit
+# ─────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+*.crt
+*.cer
+*.keystore
+*.kdbx
+id_rsa*
+id_ed25519*
+*.ovpn
+*.token
+*credential*
+*secret*
+*password*
+credentials.json
+
+# ─────────────────────────────────────────────
+# Python
+# ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+.python-version
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+*.egg
+*.whl
+dist/
+build/
+.eggs/
+MANIFEST
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.ipynb_checkpoints/
+
+# ─────────────────────────────────────────────
+# Node
+# ─────────────────────────────────────────────
+node_modules/
+.sass-cache/
+
+# ─────────────────────────────────────────────
+# Logs, caches & temp
+# ─────────────────────────────────────────────
+*.log
+logs/
+.cache/
+cache/
+temp/
+
+# ─────────────────────────────────────────────
+# macOS
+# ─────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+.AppleDouble
+.AppleDB
+.AppleDesktop
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.DocumentRevisions-V100
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ─────────────────────────────────────────────
+# Windows
+# ─────────────────────────────────────────────
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+*.stackdump
+
+# ─────────────────────────────────────────────
+# Linux
+# ─────────────────────────────────────────────
+*~
+.nfs*
+.fuse_hidden*
+
+# ─────────────────────────────────────────────
+# Editors & IDEs
+# ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*.orig
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
